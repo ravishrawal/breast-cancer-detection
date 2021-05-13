@@ -9,11 +9,18 @@ Despite incredible advances in imaging technology, breast cancer can be difficul
 This project adopts a sliding window approach to:
 
 1. Extract patches
-2. Classify patches
+2. Label patches
 3. Train a classifier using this labelled dataset
 4. Fine tune the classifier
 5. Generate a heatmap to predict and display cancerous regions
 
+#### Tools Used:
+
+* Tensorflow
+* Keras
+* OpenSlide
+* numPy 
+* matplotlib
 
 #### Predictions:
 
@@ -32,3 +39,4 @@ The algorithm catches areas that were lazily annotated and others that may have 
 #### Future Work:
 
 Due to GPU and storage constraints, the slides had to be downsampled from 40x to 10x zoom. The algorithm can be improved by using the 40x magnification for training and prediction.
+
